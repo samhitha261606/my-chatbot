@@ -4,7 +4,7 @@ import './styles.css';
 const App = () => {
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState([
-    { from: 'bot', text: 'Hi! I am your Gemini-powered chatbot. Ask me anything!' }
+    { from: 'bot', text: 'Hi! I am your chatbot. Ask me anything!' }
   ]);
   const [loading, setLoading] = useState(false);
 
@@ -36,7 +36,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1>Gemini Chatbot</h1>
+      <h1>My Chatbot</h1>
       <div className="chat-window">
         {messages.map((msg, i) => (
           <div
